@@ -14,6 +14,10 @@ function Intro() {
   return (
     <section className='flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12'>
       <nav className='w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize flex items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm'>
+        
+        <Link href='/' className='mr-2'>
+          Nexeri
+        </Link>
         <Link href='/' className='mr-2'>
           Home
         </Link>
