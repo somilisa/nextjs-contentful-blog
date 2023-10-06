@@ -12,8 +12,8 @@ import { CMS_NAME, CMS_URL } from '@/lib/constants';
 
 function Intro() {
   return (
-    <section className='flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12'>
-      <nav className='w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize flex items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm'>
+    <section className='flex-col flex items-center md:justify-between mt-16 mb-16 md:mb-12'>
+      {/* <nav className='w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize flex items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm'>
         <Link href='/' className='mr-2'>
           Nexeri
         </Link>
@@ -27,27 +27,25 @@ function Intro() {
           Contact
         </Link>
         <button>Menu </button>
+      </nav> */}
+      <nav className='w-full py-3  font-medium capitalize flex items-center justify-between '>
+        <Link href='/' className='mr-2'>
+          Nexeri
+        </Link>
+        <hamburger />
+        <button border border-solid border-dark>
+          {' '}
+          Menu{' '}
+        </button>
       </nav>
-      <h1 className='text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8'>
-        Blog.
-      </h1>
-      <h2 className='text-center md:text-left text-lg mt-5 md:pl-8'>
-        A statically generated blog example using{' '}
-        <a
-          href='https://nextjs.org/'
-          className='underline hover:text-success duration-200 transition-colors'
-        >
-          Next.js
-        </a>{' '}
-        and{' '}
-        <a
-          href={CMS_URL}
-          className='underline hover:text-success duration-200 transition-colors'
-        >
-          {CMS_NAME}
-        </a>
-        .
-      </h2>
+      <div className='w-full flex-col'>
+        <p className='py-3 px-8 text-xstracking-tighter leading-tight '>
+          Our Stories
+        </p>
+        <h2 className=' px-8 text-lg mt-3 font-semibold'>
+          Follow the latest news in our lives and in the world of technology .
+        </h2>
+      </div>
     </section>
   );
 }
