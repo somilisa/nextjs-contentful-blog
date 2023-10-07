@@ -28,21 +28,21 @@ function Intro() {
         </Link>
         <button>Menu </button>
       </nav> */}
-      <nav className='w-full py-3  font-medium capitalize flex items-center justify-between '>
+      <nav className='w-full py-3  font-medium flex items-center justify-between '>
         <Link href='/' className='mr-2'>
-          Nexeri
+          nexeri
         </Link>
-        <hamburger />
-        <button border border-solid border-dark>
+        <sunicon />
+        <button className='border border-solid border-dark rounded-xl px-5 py-1 text-xs'>
           {' '}
           Menu{' '}
         </button>
       </nav>
       <div className='w-full flex-col'>
-        <p className='py-3 px-8 text-xstracking-tighter leading-tight '>
+        <p className='py-3 px-8 text-xs tracking-tighter leading-tight '>
           Our Stories
         </p>
-        <h2 className=' px-8 text-lg mt-3 font-semibold'>
+        <h2 className=' px-8 text-2xl mt-1 font-semibold'>
           Follow the latest news in our lives and in the world of technology .
         </h2>
       </div>
