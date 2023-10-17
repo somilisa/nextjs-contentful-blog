@@ -73,16 +73,18 @@ function HeroPost({
           <CoverImage title={title} slug={slug} url={coverImage.url} />
         </div>
         <div>
+          <div className='mb-4 md:mb-0 text-lg'>
+            <Date dateString={date} />
+          </div>
+
           <h3 className='mb-4 text-4xl lg:text-6xl leading-tight'>
             <Link href={`/posts/${slug}`} className='hover:underline'>
               {title}
             </Link>
           </h3>
-          <div className='mb-4 md:mb-0 text-lg'>
-            <Date dateString={date} />
-          </div>
+
           <p className='text-lg leading-relaxed mb-4'>{excerpt}</p>
-          {author && <Avatar name={author.name} picture={author.picture} />}
+          {/* {author && <Avatar name={author.name} picture={author.picture} />} */}
         </div>
       </div>
     </section>
