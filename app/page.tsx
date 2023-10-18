@@ -32,7 +32,6 @@ function Intro() {
         <Link href='/' className='mr-2'>
           nexeri
         </Link>
-        <sunicon />
         <button className='border border-solid border-dark rounded-xl px-5 py-1 text-xs'>
           {' '}
           Menu{' '}
